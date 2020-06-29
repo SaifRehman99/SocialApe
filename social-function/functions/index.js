@@ -491,6 +491,7 @@ exports.createNotificationLIKE = functions.firestore.document('likes/{id}').onCr
   db.doc(`/screams/${snapshot.data().screamId}`)
     .get()
     .then((data) => {
+      //apni post like me no notification
       if (data.exists && data.data().userHandle !== snapshot.data().userHandle) {
         return db.doc(`/notifications/${snapshot.id}`).set({
           createdAt: new Date().toISOString(),
