@@ -1,0 +1,18 @@
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'Roberto';
+  background-color: rgb(245, 245, 245);
+}
+
+.container {
+  margin: 80px auto 0 auto;
+  max-width: 1000px;
+}
+
+.nav-container {
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
